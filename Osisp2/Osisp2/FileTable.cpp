@@ -1,18 +1,18 @@
 #include <fstream>
 #include <regex>
 
-#include "file_reader.h"
+#include "FileTable.h"
 
 using namespace std;
 
-fileTable::fileTable(string fileName)
+FileTable::FileTable(string fileName)
 {
 	this->tableData = readFile(fileName);
 	this->row_count = this->tableData.size();
 	this->column_count = countColumns();
 }
 
-int fileTable::countColumns()
+int FileTable::countColumns()
 {
 	int max = -1;
 	for (vector<string> v : this->tableData)
@@ -25,7 +25,7 @@ int fileTable::countColumns()
 	return max;
 }
 
-vector<vector<string>> fileTable::readFile(string fileName)
+vector<vector<string>> FileTable::readFile(string fileName)
 {	
 	ifstream src(fileName);
 	string line;

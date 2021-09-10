@@ -139,11 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="file_reader.cpp" />
+    <ClCompile Include="FileTable.cpp" />
     <ClCompile Include="Osisp2.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="file_reader.h" />
+    <ClInclude Include="FileTable.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

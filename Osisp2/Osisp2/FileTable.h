@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class fileTable
+class FileTable
 {
 private:
 	vector<vector<string>> readFile(string fileName);
@@ -14,5 +14,5 @@ public:
 	int row_count;
 	int column_count;
 	vector<vector<string>> tableData;
-	fileTable(string fileName);
+	FileTable(string fileName);
 };
